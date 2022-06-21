@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:url(bad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    height: 100vh;
+}
+
+
+.Horloge{
+    background: rgba(10, 8, 3, 0.407);
+    border: 10px double white;
+    border-radius: 50%;
+}
+
+.wrap{
+    width: 350px;
+    height: 350px;
+    position:relative ;
+}
+
+.minute ,.heure{
+    position: absolute;
+    height: 100px;
+    width: 5px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    top: -27%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, -4);
+}
+
+.minute{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -36%;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.second{
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -23%;
+    background: #ff4b3a;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+
+.point{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 15px;
+    height: 12px;
+    background-color: white;
+    border: 2px solid #131416;
+    border-radius: 50%;
+
+}
